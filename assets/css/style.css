@@ -1,0 +1,144 @@
+body{
+    background-image:  url("jadeStone.jpg");
+    background-size: 150%;   
+    background-position:center;  
+    
+    
+}
+/* gems 127px 195px */
+h1{
+    background: rgb(4, 4, 65);
+    color: rgb(219, 127, 127);
+    padding: 2%;
+    text-align: center;
+    font-family: cursive;
+    border-bottom: rgb(211, 224, 151) 5px solid;
+    border-top: rgb(211, 224, 151) 5px solid;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 30px; 
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+ul{
+
+    margin: auto;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background:rgb(4, 4, 65);
+    color: rgb(219, 127, 127);
+    text-align: left;
+    border: rgb(211, 224, 151) 5px solid;
+    font-size: 1.1em;
+    border-radius: 30px; 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#scoreContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+
+#crystalNumber{
+    background: green;
+    height: auto;
+    
+    color: maroon;
+    font-size: 2em;
+    margin-left: 1%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    border: maroon 2px solid;
+    border-radius: 30px; 
+}
+#crystalRandomCPU{
+    text-align: right;
+    padding-right:30%;
+    font-size: 1.5em;
+    
+}
+#winsLosses{
+    background:midnightblue;
+    color: yellow;
+    font-size: 2em;
+    border: maroon 2px solid;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    margin-left: 1%;
+    height: auto;
+    border-radius: 30px; 
+
+}
+.streak{
+    text-align: center;
+    
+}
+#myCrystals{
+    background: black;
+    color: maroon;
+    font-size: 2em;
+    border: maroon 2px solid;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    margin-left: 1%;
+    height: auto;
+    border-radius: 30px; 
+
+}
+#myScore{
+    text-align: right;
+    padding-right:30%;
+    font-size: 1.5em;
+}
+#myCrystalContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-top: 2%;
+    grid-column-gap: 1%;
+    margin-bottom: 5%;
+    
+}
+#redImg, #blueImg, #greenImg, #yellowImg{
+    width: 60%;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        background-size: 500%;
+        background-position:center;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    #myCrystalContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        margin-left: 10%;
+        margin-top: 2%;
+        grid-column-gap: 1%;
+        
+    }
+    body{
+        font-size: 0.8em;
+    }
+    #scoreContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        font-size: 0.7em;
+        
+    }
+    #yellowGem{
+        margin-top: 2%;
+    }
+    .gem{
+        width:50%;
+        
+    }
+
+}
